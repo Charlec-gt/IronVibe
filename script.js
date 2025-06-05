@@ -19,31 +19,52 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Testimonial Carousel
-    const testimonialCards = document.querySelector('.testimonial-cards');
-    const testimonialCard = document.querySelectorAll('.testimonial-card');
-    const leftArrow = document.querySelector('.left-arrow');
-    const rightArrow = document.querySelector('.right-arrow');
-    let currentIndex = 0;
-    const cardWidth = testimonialCard[0].offsetWidth + 32; // width + gap
+   // Testimonial Carousel
+const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+const dotsContainer = document.querySelector('.testimonial-dots');
+let currentSlide = 0;
 
-    function updateCarousel() {
-        testimonialCards.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-    }
+// Create dots
+testimonialSlides.forEach((_, index) => {
+  const dot = document.createElement('div');
+  dot.classList.add('testimonial-dot');
+  if (index === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => goToSlide(index));
+  dotsContainer.appendChild(dot);
+});
 
-    leftArrow.addEventListener('click', function() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
-    });
+const dots = document.querySelectorAll('.testimonial-dot');
 
-    rightArrow.addEventListener('click', function() {
-        if (currentIndex < testimonialCard.length - 3) {
-            currentIndex++;
-            updateCarousel();
-        }
-    });
+function updateCarousel() {
+  testimonialSlides.forEach((slide, index) => {
+    slide.classList.toggle('active', index === currentSlide);
+  });
+  
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentSlide);
+  });
+}
+
+function goToSlide(slideIndex) {
+  currentSlide = slideIndex;
+  updateCarousel();
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % testimonialSlides.length;
+  updateCarousel();
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + testimonialSlides.length) % testimonialSlides.length;
+  updateCarousel();
+}
+
+document.querySelector('.right-arrow').addEventListener('click', nextSlide);
+document.querySelector('.left-arrow').addEventListener('click', prevSlide);
+
+// Auto-advance (optional)
+// setInterval(nextSlide, 5000);
 
     // FAQ Accordion
     const faqQuestions = document.querySelectorAll('.faq-question');
