@@ -4,42 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IronVibe Fitness | Fuel Your Strength</title>
+  <meta name="description" content="IronVibe Fitness - Premium gym with custom workout plans, certified coaches, and nutrition guidance">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <!-- Navigation bar -->
   <header class="navbar">
     <div class="container nav-container">
+      <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <ul class="nav-left">
         <li><a href="index.html">HOME</a></li>
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">SERVICES</a></li>
       </ul>
       <div class="logo">
-  <a href="index.html" class="brand-logo"><strong>IRONVIBE</strong></a>
-</div>
-
+        <a href="index.html" class="brand-logo"><strong>IRONVIBE</strong></a>
+      </div>
       <ul class="nav-right">
         <li><a href="#">TRAINERS</a></li>
         <li><a href="#">RESOURCES</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
-      <button class="mobile-menu-btn">☰</button>
     </div>
   </header>
 
   <!-- Hero Section with Background Image -->
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <div class="hero-text">
-      <h1>FUEL YOUR STRENGTH<br>IGNITE YOUR VIBE</h1>
-      <p><strong>Your fitness journey starts here.</strong> Get custom workout plans, train with certified coaches, nutrition coaching, and expert guidance to transform your body and mind.</p>
-      <a href="#" class="btn-hero">Join us today</a>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>FUEL YOUR STRENGTH<br>IGNITE YOUR VIBE</h1>
+        <p><strong>Your fitness journey starts here.</strong> Get custom workout plans, train with certified coaches, nutrition coaching, and expert guidance to transform your body and mind.</p>
+        <a href="#" class="button btn-hero">Join us today</a>
+      </div>
     </div>
-  </div>
-</section>
+    <div class="hero-preload" aria-hidden="true"></div>
+  </section>
 
   <!-- How It Works -->
   <section class="how-it-works">
@@ -48,96 +50,95 @@
       <h2>We Help You Prioritize Your Strength Goals</h2>
       <p>IronVibe blends expert coaching, custom plans, and smart tracking to create a results-driven fitness experience. Just sign up, set your goals, and let us guide your transformation.</p>
       <p>Explore our training plans, book a free consultation, and begin your transformation with certified professionals.</p>
-      <a href="#" class="primary-button">Find a certified coach</a>
+      <a href="#" class="button primary-button">Find a certified coach</a>
       <div class="workflow-image">
-        <img src="images/portrait-muscle-man-posing-studio-with-dumbbells.jpg" alt="How IronVibe works" width="800" height="300">
+        <img src="images/images/How it works.jpg" alt="Muscular man posing with dumbbells" loading="lazy" width="800" height="300">
       </div>
     </div>
   </section>
 
   <!-- Services -->
-<section class="services">
-  <div class="container">
-    <small>OUR PROGRAMS</small>
-    <h2>Choose the Right Plan for You</h2>
-    <div class="service-grid">
-      <div class="service-card">
-        <div class="service-card-img">
-          <img src="images/athletic-man-exercising-with-weights-copy-space.jpg" alt="Strength training">
+  <section class="services">
+    <div class="container">
+      <small>OUR PROGRAMS</small>
+      <h2>Choose the Right Plan for You</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="images/images/strength training main.png" alt="Athletic man exercising with weights" loading="lazy">
+          </div>
+          <div class="service-card-content">
+            <h3>Strength Technique Lab</h3>
+            <p>Master compound lifts with real-time form correction from certified coaches.</p>
+            <a href="#" class="button">Learn More</a>
+          </div>
         </div>
+
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="images/images/Cardio and conditioning.jpg" alt="Bodybuilder exercising with dumbbells" loading="lazy">
+          </div>
+          <div class="service-card-content">
+            <h3>Cardio & Conditioning</h3>
+            <p>Improve your endurance with structured HIIT, circuits, and aerobic sessions.</p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card-long">
         <div class="service-card-content">
-          <h3>Strength Technique Lab</h3>
-          <p>Master compound lifts with real-time form correction from certified coaches.</p>
+          <h3>Nutrition Coaching</h3>
+          <p>Custom meal plans and expert guidance to fuel your performance and recovery. Our nutrition coaching program provides personalized meal planning, macro tracking, and nutritional education to complement your fitness journey.</p>
           <a href="#" class="button">Learn More</a>
         </div>
-      </div>
-
-      <div class="service-card">
-        <div class="service-card-img">
-          <img src="images/powerful-stylish-bodybuilder-with-tattoo-his-arm-doing-exercises-with-dumbbells-isolated-dark-background.jpg" alt="Cardio training">
-        </div>
-        <div class="service-card-content">
-          <h3>Cardio & Conditioning</h3>
-          <p>Improve your endurance with structured HIIT, circuits, and aerobic sessions.</p>
-          <a href="#" class="button">Learn More</a>
+        <div class="service-card-long-img">
+          <img src="images/images/nutrition-healthy-food-coaching.jpg" alt="Healthy snacks on wooden desk" loading="lazy">
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="service-card-long">
-      <div class="service-card-content">
-        <h3>Nutrition Coaching</h3>
-        <p>Custom meal plans and expert guidance to fuel your performance and recovery. Our nutrition coaching program provides personalized meal planning, macro tracking, and nutritional education to complement your fitness journey. Whether you're looking to lose fat, gain muscle, or improve performance, our certified nutritionists will create a plan tailored to your needs and lifestyle.</p>
-        <a href="#" class="button">Learn More</a>
-      </div>
-      <div class="service-card-long-img">
-        <img src="images/top-view-little-cookies-crackers-with-fruits-brown-wooden-desk.jpg" alt="Nutrition coaching">
-      </div>
-    </div>
-  </div>
-</section>
-
-
- <!-- Testimonials -->
-<section class="testimonials">
-  <div class="container">
-    <small>REAL STORIES</small>
-    <h2>What Our Members Say</h2>
-    <p class="testimonials-intro">Hear from real people who have transformed their lives with IronVibe Fitness.</p>
-    
-    <div class="testimonial-slider">
-      <div class="testimonial-slide active">
-        <img src="images/charles-gaudreault-xXofYCc3hqc-unsplash.jpg" alt="Client Charles">
-        <blockquote>“Joining IronVibe changed my life. I lost 15kg and gained strength and confidence I never thought possible.”</blockquote>
-        <cite>- Charlec FX., 27</cite>
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <small>REAL STORIES</small>
+      <h2>What Our Members Say</h2>
+      <p class="testimonials-intro">Hear from real people who have transformed their lives with IronVibe Fitness.</p>
+      
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active" aria-hidden="false">
+          <img src="images/images/charles-gaudreault-xXofYCc3hqc-unsplash.jpg" alt="Client Charles" loading="lazy">
+          <blockquote>“Joining IronVibe changed my life. I lost 15kg and gained strength and confidence I never thought possible.”</blockquote>
+          <cite>- Charlec FX., 27</cite>
+        </div>
+        
+        <div class="testimonial-slide" aria-hidden="true">
+          <img src="images/images/Daniel.jpg" alt="Client Daniel" loading="lazy">
+          <blockquote>“The coaching and programming here are unmatched. I hit new PRs every month and feel stronger than ever.”</blockquote>
+          <cite>- Daniel C., 34</cite>
+        </div>
+        
+        <div class="testimonial-slide" aria-hidden="true">
+          <img src="images/images/Amina.jpg" alt="Client Amina" loading="lazy">
+          <blockquote>“Supportive community, expert coaches, and real results. Best decision I've made.”</blockquote>
+          <cite>- Amina R., 30</cite>
+        </div>
+        
+        <div class="testimonial-slide" aria-hidden="true">
+          <img src="images/images/Sarah.jpg" alt="Client Sarah" loading="lazy">
+          <blockquote>“The nutrition coaching completely changed my relationship with food and my body.”</blockquote>
+          <cite>- Sarah M., 28</cite>
+        </div>
       </div>
       
-      <div class="testimonial-slide">
-        <img src="images/gorilla-freak-wt5jg8_WrJg-unsplash.jpg" alt="Client Daniel">
-        <blockquote>“The coaching and programming here are unmatched. I hit new PRs every month and feel stronger than ever.”</blockquote>
-        <cite>- Daniel C., 34</cite>
-      </div>
-      
-      <div class="testimonial-slide">
-        <img src="images/gorgeous-young-sports-woman-make-sport-exercises.jpg" alt="Client Amina">
-        <blockquote>“Supportive community, expert coaches, and real results. Best decision I've made.”</blockquote>
-        <cite>- Amina R., 30</cite>
-      </div>
-      
-      <div class="testimonial-slide">
-        <img src="images/woman-good-mood-raises-arm-with-muscles-has-strong-body-dressed-gym-outfit-listens-audio-via-modern-headphones-poses-indoor.jpg" alt="Client Sarah">
-        <blockquote>“The nutrition coaching completely changed my relationship with food and my body.”</blockquote>
-        <cite>- Sarah M., 28</cite>
+      <div class="testimonial-controls">
+        <button class="testimonial-arrow left-arrow" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonial-dots"></div>
+        <button class="testimonial-arrow right-arrow" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
       </div>
     </div>
-    
-    <div class="testimonial-controls">
-      <button class="testimonial-arrow left-arrow"><i class="fas fa-chevron-left"></i></button>
-      <div class="testimonial-dots"></div>
-      <button class="testimonial-arrow right-arrow"><i class="fas fa-chevron-right"></i></button>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Partners -->
   <section class="partners">
@@ -145,11 +146,13 @@
       <h2>Our Partners</h2>
       <div class="partner-container">
         <div class="partner-logos">
-          <img src="images/Healthlife.jpg" alt="Healthlife Logo" width="150" height="50">
-          <img src="images/Youtube.jpg" alt="YouTube Logo" width="150" height="50">
-          <img src="images/X.jpg" alt="X Logo" width="150" height="50">
-          <img src="images/Natural Health.jpg" alt="Natural Health Logo" width="150" height="50">
-          <img src="images/Instagram.jpg" alt="Instagram Logo" width="150" height="50">
+          <img src="images/Healthlife.jpg" alt="Healthlife Logo" loading="lazy" width="150" height="50">
+          <img src="images/Youtube.jpg" alt="YouTube Logo" loading="lazy" width="150" height="50">
+          <img src="images/X.jpg" alt="X Logo" loading="lazy" width="150" height="50">
+          <img src="images/Natural Health.jpg" alt="Natural Health Logo" loading="lazy" width="150" height="50">
+          <img src="images/Instagram.jpg" alt="Instagram Logo" loading="lazy" width="150" height="50">
+          <img src="images/Facebook.png" alt="Facebook" loading="lazy" width="150" height="50">
+          <img src="images/Logo text.jpg" alt="Logo text" loading="lazy" width="150" height="50">
         </div>
       </div>
     </div>
@@ -158,23 +161,24 @@
   <!-- Resources -->
   <section class="resources">
     <div class="container">
+      <small>EXPLORE OUR PROGRAMS</small>
       <h2>Resources for Your Well-being</h2>
       <p class="resources-intro">We believe in a holistic approach to fitness. Explore our resources designed to support every aspect of your health and wellness journey.</p>
       <div class="resource-cards">
         <div class="resource-card yellow">
-          <img src="images/Decorative-icon.png" alt="Articles icon" width="80" height="80">
+          <img src="images/images/decprative icon.png" alt="Articles icon" loading="lazy" width="80" height="80">
           <h3>Articles & Tools</h3>
           <p>Explore helpful content and guides tailored to your goals.</p>
           <a href="#" class="button">Explore</a>
         </div>
         <div class="resource-card blue">
-          <img src="images/side-view-young-woman-treadmill.jpg" alt="Workshops icon" width="80" height="80">
+          <img src="images/images/workshop and support.png" alt="Workshops icon" loading="lazy" width="80" height="80">
           <h3>Workshops & Support</h3>
           <p>Join community events and live workshops for mental and physical health.</p>
           <a href="#" class="button">See Events</a>
         </div>
         <div class="resource-card pink">
-          <img src="images/full-shot-fit-man-training-gym.jpg" alt="Guidance icon" width="80" height="80">
+          <img src="images/images/Professional guidance.png" alt="Guidance icon" loading="lazy" width="80" height="80">
           <h3>Professional Guidance</h3>
           <p>Book sessions with certified coaches and wellness experts.</p>
           <a href="#" class="button">Get Help</a>
@@ -186,14 +190,15 @@
   <!-- Not Alone Section -->
   <section class="not-alone">
     <div class="container">
+      <small>COMMUNITY</small>
       <div class="not-alone-content">
         <div class="not-alone-text">
           <h2>You're Not Alone on This Journey</h2>
           <p>At IronVibe, we understand that fitness is more than just physical - it's mental, emotional, and social. That's why we've built a supportive community where you can connect with others who share your goals and challenges.</p>
-          <p>Whether you're just starting out or you're a seasoned athlete, our team is here to provide the guidance, motivation, and accountability you need to succeed. We celebrate every victory, no matter how small, and we're here to help you through every setback.</p>
+          <p>Whether you're just starting out or you're a seasoned athlete, our team is here to provide the guidance, motivation, and accountability you need to succeed.</p>
           <a href="#" class="button">Talk to Someone</a>
         </div>
-        <img src="images/people-exercising-gym.jpg" alt="Supportive community" width="500" height="400">
+        <img src="images/images/people-exercising-fitness-gym.jpg" alt="Supportive community at gym" loading="lazy" width="500" height="400">
       </div>
     </div>
   </section>
@@ -201,47 +206,48 @@
   <!-- FAQ -->
   <section class="faq">
     <div class="container">
+      <small>NEED HELP?</small>
       <h2>Frequently Asked Questions</h2>
-      <p class="faq-intro">We've compiled answers to the most common questions about our programs, services, and community. If you don't find what you're looking for, don't hesitate to reach out to our support team.</p>
+      <p class="faq-intro">We've compiled answers to the most common questions about our programs, services, and community.</p>
       
       <div class="faq-content">
         <div class="faq-image">
-          <img src="images/people-training-gym.jpg" alt="Frequently asked questions" width="600" height="800">
+          <img src="images/images/FAQs.jpg" alt="People training in gym" loading="lazy" width="600" height="800">
         </div>
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-question">How do I book a training session? <span class="plus-icon">+</span></button>
-            <div class="faq-answer">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq1">How do I book a training session? <span class="plus-icon">+</span></button>
+            <div id="faq1" class="faq-answer">
               <p>You can book directly through our website or mobile app. Simply select your preferred coach, choose an available time slot, and complete your booking. You'll receive a confirmation email with all the details.</p>
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-question">Are online sessions available? <span class="plus-icon">+</span></button>
-            <div class="faq-answer">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq2">Are online sessions available? <span class="plus-icon">+</span></button>
+            <div id="faq2" class="faq-answer">
               <p>Yes, we offer both in-person and virtual training. Our online sessions are conducted via Zoom and include the same level of personalized attention as our in-person sessions.</p>
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-question">What's the difference between coaching and training? <span class="plus-icon">+</span></button>
-            <div class="faq-answer">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq3">What's the difference between coaching and training? <span class="plus-icon">+</span></button>
+            <div id="faq3" class="faq-answer">
               <p>Coaching includes comprehensive programming, nutrition guidance, and ongoing support, while training focuses on individual workout sessions. Coaching is more holistic and long-term.</p>
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-question">Do I need a subscription? <span class="plus-icon">+</span></button>
-            <div class="faq-answer">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq4">Do I need a subscription? <span class="plus-icon">+</span></button>
+            <div id="faq4" class="faq-answer">
               <p>We offer both subscription and pay-as-you-go options. Subscriptions provide better value with discounted rates and additional benefits like nutrition planning.</p>
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-question">Can I switch coaches? <span class="plus-icon">+</span></button>
-            <div class="faq-answer">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq5">Can I switch coaches? <span class="plus-icon">+</span></button>
+            <div id="faq5" class="faq-answer">
               <p>Absolutely! We want you to work with the right person. You can request a coach change at any time through your account settings or by contacting our support team.</p>
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-question">Is my information confidential? <span class="plus-icon">+</span></button>
-            <div class="faq-answer">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq6">Is my information confidential? <span class="plus-icon">+</span></button>
+            <div id="faq6" class="faq-answer">
               <p>Yes, all client information is kept strictly private. We adhere to all data protection regulations and never share your personal details without your consent.</p>
             </div>
           </div>
@@ -253,14 +259,15 @@
   <!-- Get in Touch -->
   <section class="get-in-touch">
     <div class="container">
+      <small>GET IN TOUCH</small>
       <h2>We Are Here to Support You</h2>
-      <p class="support-intro">Our team is dedicated to helping you achieve your fitness goals. Whether you have questions about our programs, need technical support, or just want to chat about your fitness journey, we're here for you.</p>
+      <p class="support-intro">Our team is dedicated to helping you achieve your fitness goals.</p>
       
       <div class="contact-container">
         <div class="contact-details">
           <h3>Contact Details</h3>
           <p><strong>Email:</strong> support@IronVibe.com</p>
-          <p><strong>Phone:</strong> +25415 249 817</p>
+          <p><strong>Phone:</strong> +254115 249 817</p>
           <p><strong>Address:</strong> 456 IronVibe Street, Muscle City</p>
           <div class="contact-hours">
             <h4>Opening Hours</h4>
@@ -271,7 +278,7 @@
         
         <div class="contact-form">
           <h3>Send Us a Message</h3>
-          <form>
+          <form id="contactForm">
             <div class="form-group">
               <input type="text" placeholder="Your Name" required>
             </div>
@@ -284,7 +291,7 @@
             <div class="form-group">
               <textarea placeholder="Your Message" required></textarea>
             </div>
-            <button type="submit" class="submit-btn">Send Message</button>
+            <button type="submit" class="button submit-btn">Send Message</button>
           </form>
         </div>
       </div>
@@ -296,7 +303,9 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-column">
-          <img src="images/ironvibe-logo-white.png" alt="IronVibe Logo" width="180" height="60">
+           <div class="logo">
+        <a href="index.html" class="brand-logo"><strong>IRONVIBE</strong></a>
+      </div>
           <p>456 IronVibe Street<br>Muscle City, ST 80012</p>
         </div>
         <div class="footer-column">
@@ -307,10 +316,10 @@
         <div class="footer-column">
           <h3>CONNECT</h3>
           <div class="social-links">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -324,7 +333,5 @@
       </div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

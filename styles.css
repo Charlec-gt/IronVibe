@@ -107,11 +107,11 @@ img {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
-  color: white; /* Or your preferred navbar text color */
+  color: white;
 }
 
 .brand-logo:hover {
-  color: #FF4C29; /* Optional hover color for interactivity */
+  color: #FF4C29;
 }
 
 .mobile-menu-btn {
@@ -123,9 +123,9 @@ img {
   cursor: pointer;
 }
 
-/* ===== HERO SECTION IMPROVEMENTS ===== */
+/* ===== HERO SECTION ===== */
 .hero {
-  background: url('images/people-training-gym.jpg') no-repeat center center/cover;
+  background: url('images/images/background.jpg') no-repeat center center/cover;
   color: white;
   min-height: 90vh;
   position: relative;
@@ -171,51 +171,38 @@ img {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.btn-hero {
+/* ===== BUTTON STYLES (UPDATED) ===== */
+.btn-hero, 
+.primary-button, 
+.submit-btn,
+.button {
   display: inline-block;
   background: #f44336;
   color: white;
-  padding: 0.8rem 2rem;
-  border-radius: 4px;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px; /* Updated to be consistently rounded */
   font-weight: bold;
   transition: all 0.3s ease;
-  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.btn-hero:hover {
+.btn-hero:hover, 
+.primary-button:hover, 
+.submit-btn:hover,
+.button:hover {
   background: #d32f2f;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Animation for hero text */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.btn-hero {
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero {
-    min-height: 80vh;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  
-  .btn-hero {
-    padding: 0.7rem 1.5rem;
-  }
-}
 /* ===== HOW IT WORKS ===== */
 .how-it-works {
   text-align: center;
@@ -232,19 +219,7 @@ img {
 }
 
 .primary-button {
-  display: inline-block;
-  background: #f44336;
-  color: white;
-  padding: 0.8rem 1.8rem;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: all 0.3s ease;
   margin-bottom: 2rem;
-}
-
-.primary-button:hover {
-  background: #d32f2f;
-  transform: translateY(-2px);
 }
 
 .workflow-image {
@@ -256,7 +231,7 @@ img {
   border-radius: 8px;
 }
 
-/* ===== PROGRAMS/SERVICES SECTION ===== */
+/* ===== SERVICES ===== */
 .services {
   padding: 5rem 0;
   background: #f9f9f9;
@@ -339,6 +314,8 @@ img {
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .service-card h3 {
@@ -354,7 +331,7 @@ img {
 }
 
 .service-card .button {
-  align-self: flex-start;
+  align-self: center;
   margin-top: auto;
 }
 
@@ -403,133 +380,7 @@ img {
   object-fit: cover;
 }
 
-.button {
-  display: inline-block;
-  background: #f44336;
-  color: white;
-  padding: 0.8rem 1.8rem;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-}
-
-.button:hover {
-  background: #d32f2f;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.service-card-img {
-  height: 220px;
-  overflow: hidden;
-}
-
-.service-card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-  display: block;
-}
-
-.service-card:hover .service-card-img img {
-  transform: scale(1.05);
-}
-
-.service-card-content {
-  padding: 2rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* center content including button */
-  text-align: center;
-}
-
-.service-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #111;
-}
-
-.service-card p {
-  color: #666;
-  margin-bottom: 1.5rem;
-  flex: 1;
-}
-
-.service-card .button {
-  align-self: center;
-  margin-top: auto;
-}
-
-/* Optional: Add hover effect to entire card */
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-.service-card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center; /* <- Important line */
-  transition: transform 0.4s ease;
-  display: block;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 992px) {
-  .service-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  
-  .service-card-long {
-    flex-direction: column;
-  }
-  
-  .service-card-long-img {
-    width: 100%;
-    min-height: 300px;
-    order: -1;
-  }
-}
-
-@media (max-width: 768px) {
-  .services {
-    padding: 3rem 0;
-  }
-  
-  .service-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .service-card-img {
-    height: 220px;
-  }
-  
-  .service-card-long .service-card-content {
-    padding: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .services h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-  }
-  
-  .service-card-content {
-    padding: 1.5rem;
-  }
-  
-  .service-card-long .service-card-content {
-    padding: 1.5rem;
-  }
-}
-
-/* Testimonials */
+/* ===== TESTIMONIALS ===== */
 .testimonials {
   background: #f9f9f9;
   text-align: center;
@@ -622,10 +473,20 @@ img {
   background: #f44336;
 }
 
+.testimonial-arrow {
+  background: none;
+  border: none;
+  color: #f44336;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
 @keyframes fadeIn {
   from { opacity: 0.4; }
   to { opacity: 1; }
 }
+
 /* ===== PARTNERS ===== */
 .partners {
   text-align: center;
@@ -697,7 +558,7 @@ img {
 }
 
 .resource-card.yellow {
-  background: #fdd835;
+  background: #d38106;
 }
 
 .resource-card.blue {
@@ -724,11 +585,10 @@ img {
 
 .resource-card .button {
   background: white;
-  color: #333;
 }
 
 .resource-card.yellow .button {
-  color: #fdd835;
+  color: #d38106;
 }
 
 .resource-card.blue .button {
@@ -768,21 +628,6 @@ img {
   width: 45%;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.not-alone .button {
-  display: inline-block;
-  background: #f44336;
-  color: white;
-  padding: 0.8rem 1.8rem;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.not-alone .button:hover {
-  background: #d32f2f;
-  transform: translateY(-2px);
 }
 
 /* ===== FAQ ===== */
@@ -925,19 +770,7 @@ img {
 }
 
 .submit-btn {
-  background: #f44336;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s ease;
   width: 100%;
-}
-
-.submit-btn:hover {
-  background: #d32f2f;
 }
 
 /* ===== FOOTER ===== */
@@ -1008,9 +841,12 @@ footer {
   color: #f44336;
 }
 
-/* ===== RESPONSIVE BREAKPOINTS ===== */
-/* Small screens (mobile) */
-@media (max-width: 600px) {
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
   .nav-left, .nav-right {
     display: none;
     width: 100%;
@@ -1021,10 +857,6 @@ footer {
 
   .nav-left.active, .nav-right.active {
     display: flex;
-  }
-
-  .mobile-menu-btn {
-    display: block;
   }
 
   .hero h1 {
@@ -1047,10 +879,18 @@ footer {
     width: 100%;
     height: 250px;
   }
-
-  .testimonial-card {
-    min-width: 100%;
-  }
+.service-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center; 
+  transition: transform 0.4s ease;
+  display: block;
+}
+.service-card-img {
+  height: 260px; 
+  overflow: hidden;
+}
 
   .resource-cards {
     grid-template-columns: 1fr;
@@ -1079,7 +919,6 @@ footer {
 
   .footer-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
   }
 
   .footer-bottom {
@@ -1088,10 +927,13 @@ footer {
   }
 }
 
-/* Medium screens (tablet) */
-@media (min-width: 601px) and (max-width: 900px) {
-  .service-grid {
-    /* Your tablet styles for service-grid here */
-    grid-template-columns: repeat(2, 1fr);
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
